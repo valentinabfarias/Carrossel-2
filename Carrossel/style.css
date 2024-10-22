@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: font1;
+    src: url(./fonts/Hunger\ Games.ttf);
+}
+
+body {
+    margin: 0;
+    /*zerar a margem de todo do documento*/
+    padding: 0;
+    /*zerar o espaçamento de todo do documento*/
+    height: 100vh;
+    width: 100vw;
+    background-color: #0a0a0a;
+    /*Escolha de plano de fundo*/
+    color: white;
+
+}
+
+header {
+    text-align: center;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+h1 {
+    font-family: font1;
+    letter-spacing: 0.1em;
+    font-size: 3em;
+}
+
+
+/*------FORMATAÇÃO DO CONTAINER------*/
+.container {
+    height: 460px;
+    /* Altura do Container*/
+    width: 800px;
+    /*Largura do Container*/
+    overflow: hidden;
+    /*Esconder o que passa do espaço do container*/
+    position: absolute;
+    /* Torna possível alterar a posição do container*/
+    transform: translate(-50%, -50%);
+    /*alterar a posição do eixo*/
+    top: 60%;
+    /*distância a partir do topo da página*/
+    left: 50%;
+    /*distância a partir da esquerda da página*/
+}
+
+
+/*------FORMATAÇÃO  DA BARRA DE NAVEGAÇÃO (LOCALIZAÇÃO)------*/
+.navegacao {
+    position: absolute;
+    /*Posição em relação ao container*/
+    bottom: 20px;
+    /*Distância a partir da base*/
+    left: 50%;
+    /*Distância a partir da esquerda*/
+    transform: translate(-50%);
+    /*Alterar o eixo principal*/
+    display: flex;
+    /*Colocar o conteúdo lado a lado*/
+
+}
+
+
+/*------FORMATAÇÃO  DOS INDICADORES DA NAVEGAÇÃO------*/
+.bar {
+    background-color: #ffffffc7;
+    /*Plano de Fundo do indicador*/
+    width: 30px;
+    /*largura do indicador*/
+    height: 5px;
+    /*Altura do indicador*/
+    margin: 6px;
+    /*Espaço entre os indicadores*/
+    transition: .3s;
+    /*Transição no hover*/
+    cursor: pointer;
+    /*Ponteiro do Mouse */
+
+}
+
+/*------FORMATAÇÃO  DA BARRA DE NAVEGAÇÃO------*/
+.bar:hover {
+    background-color: #5279cc;
+    /*Alteração do BG*/
+
+}
+
+/*------FORMATAÇÃO  DA BARRA DE NAVEGAÇÃO------*/
+input {
+    display: none;
+    /*Ocultar as input do tipo Radio*/
+}
+
+/*------FORMATAÇÃO  DA BARRA DE NAVEGAÇÃO------*/
+.imagens {
+    display: flex;
+    /*Posiciona uma imagem ao lado da outra*/
+    width: 600%;
+    /*define o tamanho da div imagens*/
+    height: 100%;
+    /*define a altura a div imagens*/
+}
+
+/*------FORMATAÇÃO  DA BARRA DE NAVEGAÇÃO------*/
+.imagem {
+    width: 16.6666666667%;
+    /*Define a proporção do tamanho de cada imagem em relação ao elemento pai*/
+    transition: .5s;
+    /*efeito na transição das imagens*/
+}
+
+/*------FORMATAÇÃO  DA BARRA DE NAVEGAÇÃO------*/
+.imagem img {
+    width: 100%;
+    /*ajusta o tamanho da imagem dentro do container*/
+    height: 100%;
+    /*ajusta o tamanho da imagem dentro do container*/
+}
+
+
+/*------FORMATAÇÃO  DA BARRA DE NAVEGAÇÃO------*/
+#imagem1:checked~.img1 {
+    margin-left: 0;
+    /*alteração na margem esquerda*/
+}
+
+#imagem2:checked~.img1 {
+    margin-left: -16.6666666667%;
+}
+
+#imagem3:checked~.img1 {
+    margin-left: -33.3333333333%;
+}
+
+#imagem4:checked~.img1 {
+    margin-left: -50%;
+}
+
+#imagem5:checked~.img1 {
+    margin-left: -66.6666666667%;
+}
+
+#imagem6:checked~.img1 {
+    margin-left: -83.3333333333%;
+}
+
+footer {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    
+}
